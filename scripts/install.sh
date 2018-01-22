@@ -32,7 +32,11 @@ apt-get install -yq python3.5
 apt-get install -yq pip
 apt-get install -yq geany
 
+apt-get install -yq default-jdk
+apt-get install -yq maven
+
 add-apt-repository ppa:numix/ppa
 apt-get update
 apt-get install numix-icon-theme
 apt-get install numix-icon-theme-circle
+

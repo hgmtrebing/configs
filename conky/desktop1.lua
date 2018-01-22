@@ -1,7 +1,7 @@
 conky.config = {
 own_window = true,
 own_window_transparent = true,
-own_window_type = 'default',
+own_window_type = 'desktop',
 own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
 own_window_argb_visual = true,
 own_window_argb_value = 0,
@@ -37,8 +37,6 @@ ${alignc} ${color lightgrey}Linux $color$kernel ${color lightgrey}on $color$mach
 
 ${color}${alignc}${color lightgrey}Uptime: ${color}$uptime${color lightgrey} | ${color lightgrey}Load: $color$loadavg
 
---${color lightgrey}${alignc}Battery:$color ${battery}${color lightgrey} | ${color lightgrey}ET: ${color}$battery_time
---${alignc}${color #66FFFF}${battery_bar 8,300}
 ${color #656565}$stippled_hr$color
 ${alignc}${color} $wireless_essid${alignr}${color lightgrey}
 
@@ -86,3 +84,8 @@ ${color}${top pid 9}          ${top name 9}${alignr}${top mem_res 9} ${top cpu 9
 ${color}${top pid 10}          ${top name 10}${alignr}${top mem_res 10} ${top cpu 10}%
 ${color #656565}$stippled_hr$color
 ]]
+
+
+--Update Battery
+--${color lightgrey}${alignc}Battery:$color ${battery}${color lightgrey} | ${color lightgrey}ET: ${color}$battery_time
+--${alignc}${color #66FFFF}${battery_bar 8,300}
