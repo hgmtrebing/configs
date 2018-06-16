@@ -1,10 +1,15 @@
 conky.config = {
 own_window = true,
-own_window_transparent = true,
+own_window_transparent = false,
+--NB: transparency must be turned off in order to allow for custom opacity
+
 own_window_type = 'default',
 own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
 own_window_argb_visual = true,
-own_window_argb_value = 0,
+own_window_argb_value = 90,
+--NB: own_window_argb_value takes an int between 0 and 255, indicating the desired opacity
+
+own_window_colour = ffffff,
 out_to_console = false,
 background = true,
 use_xft = true,
@@ -17,6 +22,7 @@ maximum_width = 325,
 draw_shades = false,
 draw_outline = false,
 draw_borders = false,
+draw_graph_borders = true,
 stippled_borders = 1,
 border_width = 0,
 default_color = 'white',
